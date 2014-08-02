@@ -1,0 +1,260 @@
+$icon-font-path: '../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/';
+
+@import "vars.scss";
+
+// bower:scss
+@import "../../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap.scss";
+// endbower
+
+// mixins
+
+@mixin large {
+  @media (min-width: $screen-sm) {
+    @content;
+  }
+}
+
+@mixin flip-horizontal {
+  -moz-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  transform: scaleX(-1);
+  -ms-filter: fliph; /*IE*/
+  filter: fliph; /*IE*/
+}
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* Space out content a bit */
+body {
+    // padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.header {
+    background-color: #ff7;
+    margin-bottom: 2em;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    h1 {
+        font-weight: 700;
+        font-size: 70px;
+        margin: 15px 0 20px;
+    }
+}
+
+h3  {
+    font-size: 24px;
+}
+
+.tagline-primary {
+    font-weight: 700;
+    padding-top: .5em;
+    padding-left: 15px;
+    padding-right: 15px;
+    .underline {
+        text-decoration: underline;
+    }
+    .regular {
+        font-weight: normal;
+    }
+}
+
+.top {
+    // margin-bottom: 2em;
+}
+
+.subscribe-wrapper {
+    text-align: center;
+    // border-top: 4px solid lighten($blue, 30%);
+    // background-color: lighten($blue, 42%);
+    border-top: 3px solid lighten(#2ECC40, 25%);
+    background-color: lighten(#2ECC40, 44%);
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: 20px 0 10px 0;
+    position: relative;
+    .form-group {
+        input {
+            margin-left: 10%;
+            width: 80%;
+            }
+        @include large {
+            width: 50%;
+            input {
+                width: 100%;
+                margin-left: 0;
+            }
+        }
+    }
+    button {
+        margin-left: .25em;
+    }
+}
+
+
+.arrow-1 {
+    @include flip-horizontal;
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    height: 65px;
+}
+
+.arrow-2 {
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    height: 65px;
+}
+
+.glyphicon-calendar {
+    top: 4px;
+    margin-right: .5em;
+}
+.glyphicon-arrow-down {
+    color: #555;
+    top: 4px;
+    margin-right: .25em;
+}
+
+.section {
+    margin-top: 2em;
+    text-align: center;
+    h3.section-header {
+        // color: #666;
+        color: $red;
+        text-transform: uppercase;
+        font-weight: 700;
+        width: 50%;
+        margin: 0 auto 1.5em;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #e5e5e5;
+        &.tools {
+            color: $blue;
+            border-bottom: 1px solid $blue;
+        }
+        &.upcoming {
+            color: $orange;
+            border-bottom: 1px solid $orange;
+        }
+        &.watching {
+            color: $purple;
+            border-bottom: 1px solid $purple;
+        }
+        &.reading {
+            color: $red;
+            border-bottom: 1px solid $red;
+        }
+        &.jobs {
+            color: $green;
+            border-bottom: 1px solid $green;
+        }
+    }
+}
+
+.item {
+    margin-bottom: 1em;
+    padding: 0 15px;
+    h4 {
+        margin: 0 0 4px 0;
+        a {
+            color: $gray;
+            font-weight: 700;
+        }
+    }
+    p {
+        margin-bottom: 4px;
+        &.link {
+            color: $gray-light;
+        }
+    }
+}
+
+
+/* Custom page footer */
+.footer {
+    margin-top: 2em;
+    color: #777;
+    border-top: 1px solid #e5e5e5;
+}
+
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 730px;
+    }
+}
+
+.logos {
+    // border-top: 1px solid #e5e5e5;
+    // padding-top: 2em;
+    margin-top: 1.5em;
+    .orgs {
+        // margin-top: 2.5em;
+    }
+    p {
+        margin-bottom: 0px;
+    }
+    img {
+        @include img-responsive;
+        margin-top: .5em;
+        margin-bottom: .5em;
+    }
+}
+
+h4.cta {
+    // margin-bottom: 1em;
+    margin-top: 0px;
+    margin-bottom: 1em;
+    font-weight: bold;
+}
+
+.nospam {
+    display: block;
+    font-size: 12px;
+    margin-top: 1em;
+}
+
+.proof {
+    color: #333;
+}
+
+.sample {
+    margin-top: 0px;
+    padding: 10px 0;
+    color: #333;
+    // border-top: 1px solid #e5e5e5;
+    // border-bottom: 1px solid #e5e5e5;
+}
+
+.bottom {
+    margin-top: 2em;
+}
+
+h3.issue {
+    margin-top: 1em;
+}
+
+.fa {
+    // margin-top: 40px;
+    margin-left: 10px;
+    margin-right: 0px;
+}
+
+.glyphicon-arrow-down {
+    color: #e74c3c;
+}
+
+.social {
+    margin-top: 12px;
+}
+
+.signoff {
+    margin-top: 1em;
+}
