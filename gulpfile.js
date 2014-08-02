@@ -46,6 +46,11 @@ gulp.task('images', function () {
     .pipe(gulp.dest('dist/images'));
 });
 
+gulp.task('issues', function () {
+  return gulp.src('app/issues/*.html')
+    .pipe(gulp.dest('dist/issues'));
+});
+
 gulp.task('fonts', function () {
   return gulp.src(require('main-bower-files')().concat('app/fonts/**/*'))
     .pipe($.filter('**/*.{eot,svg,ttf,woff}'))
@@ -114,7 +119,7 @@ gulp.task('watch', ['connect', 'serve'], function () {
   gulp.watch('bower.json', ['wiredep']);
 });
 
-gulp.task('build', ['jshint', 'html', 'images', 'fonts', 'extras'], function () {
+gulp.task('build', ['jshint', 'html', 'images', 'fonts', 'extras', 'issues'], function () {
   return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}));
 });
 
