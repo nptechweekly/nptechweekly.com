@@ -1,0 +1,514 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="viewport" content="width=device-width" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>#nptech weekly</title>
+<meta name="description" content="A free weekly email of the best news &amp; jobs in nonprofit technology.">
+
+<!-- Place this data between the <head> tags of your website -->
+        <!-- Twitter Card data -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@nptechweekly">
+        <meta name="twitter:title" content="#nptech weekly">
+        <meta name="twitter:description" content="A free weekly email of the best news &amp; jobs in nonprofit technology.">
+        <meta name="twitter:creator" content="@nptechweekly">
+        <meta name="twitter:image" content="http://www.nptechweekly.com/images/twitter-card.png">
+
+        <!-- Open Graph data -->
+        <meta property="og:title" content="#nptech weekly" />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content=" http://www.nptechweekly.com/" />
+        <meta property="og:image" content="http://www.nptechweekly.com/images/twitter-card.png" />
+        <meta property="og:description" content="A free weekly email of the best news &amp; jobs in nonprofit technology." />
+        <meta property="og:site_name" content="#nptech weekly" />
+        <meta property="fb:admins" content="279875022216949" />
+
+
+<style>
+/* -------------------------------------
+    GLOBAL
+------------------------------------- */
+* {
+  margin:0;
+  padding:0;
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-size: 100%;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  -webkit-font-smoothing:antialiased;
+  -webkit-text-size-adjust:none;
+  width: 100%!important;
+  height: 100%;
+}
+
+
+/* -------------------------------------
+    ELEMENTS
+------------------------------------- */
+a {
+  color: #348eda;
+}
+
+.btn-primary, .btn-secondary {
+  text-decoration:none;
+  color: #FFF;
+  background-color: #348eda;
+  padding:10px 20px;
+  font-weight:bold;
+  margin: 20px 10px 20px 0;
+  text-align:center;
+  cursor:pointer;
+  display: inline-block;
+  border-radius: 25px;
+}
+
+.btn-secondary{
+  background: #aaa;
+}
+
+.last {
+  margin-bottom: 0;
+}
+
+.first{
+  margin-top: 0;
+}
+
+
+/* -------------------------------------
+    BODY
+------------------------------------- */
+table.body-wrap {
+  width: 100%;
+  padding: 20px;
+}
+
+table.body-wrap .container{
+  border: 1px solid #f0f0f0;
+}
+
+
+/* -------------------------------------
+    FOOTER
+------------------------------------- */
+table.footer-wrap {
+  width: 100%;
+  clear:both!important;
+}
+
+.footer-wrap .container p {
+  font-size:12px;
+  color:#666;
+
+}
+
+table.footer-wrap a{
+  color: #999;
+}
+
+
+/* -------------------------------------
+    TYPOGRAPHY
+------------------------------------- */
+h1,h2,h3{
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; line-height: 1.1; margin-bottom:15px; color:#000;
+  margin: 40px 0 10px;
+  line-height: 1.2;
+  font-weight:200;
+}
+
+h1 {
+  font-size: 36px;
+}
+h2 {
+  font-size: 28px;
+}
+h3 {
+  font-size: 22px;
+}
+
+p, ul {
+  margin-bottom: 10px;
+  font-weight: normal;
+  font-size:14px;
+}
+
+ul li {
+  margin-left:5px;
+  list-style-position: inside;
+}
+
+/* ---------------------------------------------------
+    RESPONSIVENESS
+    Nuke it from orbit. It's the only way to be sure.
+------------------------------------------------------ */
+
+/* Set a max-width, and make it display as block so it will automatically stretch to that width, but will also shrink down on a phone or something */
+.container {
+  display:block!important;
+  max-width:600px!important;
+  margin:0 auto!important; /* makes it centered */
+  clear:both!important;
+}
+
+/* This should also be a block element, so that it will fill 100% of the .container */
+.content {
+  padding:20px;
+  max-width:600px;
+  margin:0 auto;
+  display:block;
+}
+
+/* Let's make sure tables in the content area are 100% wide */
+.content table {
+  width: 100%;
+}
+
+.title {
+  background-color: #FFFF77;
+  text-align: center;
+  padding: 15px 0;
+  margin-bottom: 15px;
+}
+
+.title h2 {
+  color: #555;
+  margin: 0;
+  margin-bottom: 0 !important;
+  font-weight: bold;
+}
+
+.preview p {
+  color: #555;
+  font-size: 12px;
+}
+
+.preview p span {
+  float: right;
+}
+
+.section {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.section h3 {
+  width: 50%;
+  color: #555;
+  border-bottom: 1px solid #cdcdcd;
+  margin: 30px auto;
+  padding-bottom: 4px;
+}
+
+.item h4 {
+  margin-bottom: 2px;
+  font-weight: bold;
+}
+
+.item h4 a {
+  color: #F25C5C;
+}
+
+.item p {
+  line-height: 1.4;
+  margin: 0px !important;
+}
+
+.item p.domain {
+  color: #666;
+  margin-bottom: 15px !important;
+}
+
+.share {
+  text-align: center;
+  color: #666;
+/*  border-top: 1px solid #cdcdcd;
+  border-bottom: 1px solid #cdcdcd;*/
+}
+
+.share .cta {
+  color: #777;
+  width: 75%;
+  border-top: 1px solid #cdcdcd;
+  margin: 15px auto 0;
+  padding-top: 15px;
+  font-weight: bold;
+}
+
+.share p {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.4;
+}
+
+.share .thanks {
+  color: #777;
+  width: 75%;
+  border-bottom: 1px solid #cdcdcd;
+  font-weight: bold;
+  padding-bottom: 15px;
+  margin: 0 auto 15px;
+}
+
+.spacer {
+  height: 15px;
+}
+
+
+</style>
+</head>
+
+<body bgcolor="#f6f6f6">
+
+<!-- body -->
+<table class="body-wrap">
+  <tr>
+    <td></td>
+    <td class="container" bgcolor="#FFFFFF">
+
+      <!-- content -->
+      <div class="content">
+      <table>
+        <tr>
+          <td class="preview">
+            <p>The best news &amp; jobs in nonprofit technology
+              <span>Issue #107 // June 20, 2014</span>
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="title">
+            <h2>#nptech weekly</h2>
+          </td>
+        </tr>
+        <tr>
+          <td class="spacer">
+
+          </td>
+        </tr>
+
+        <tr>
+          <td class="share">
+            <p class="cta">Be a superhero &amp; share us with your friends:</p>
+            <p><a target="_blank" href="http://www.nptechweekly.com">http://www.nptechweekly.com</a></p>
+            <p class="thanks">♥ Thank you. ♥</p>
+          </td>
+        </tr>
+
+
+        <tr>
+          <td class="section">
+            <h3>Reading</h3>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="item">
+            <h4><a target="_blank" href="http://www.slideshare.net/dlichaw/storymapping-the-macgyver-approach-to-content-strategy">Storymapping: A MacGyver Approach to Content Strategy</a></h4>
+            <p>Tell your story using the tools you have available.</p>
+            <p class="domain">slideshare.net</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="item">
+            <h4><a target="_blank" href="https://www.blackbaud.com/files/resources/downloads/Whitepaper_SocialInfluencer.pdf">Understanding Who Your Social Media Influencers Are &amp; How To Empower Them</a> (pdf)</h4>
+            <p>Some of your friends &amp; followers are the most important - know who they are.</p>
+            <p class="domain">blackbaud.com</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="item">
+            <h4><a target="_blank" href="http://www.slideshare.net/danielle.brigida/confab">Influencers, Advocates, &amp; Hidden VIPs</a></h4>
+            <p>Similar to the above, but from a nonprofit perspective.</p>
+            <p class="domain">slideshare.net</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="item">
+            <h4><a target="_blank" href="http://mdaniels.com/makeyourcopylonger/">An Archive of Research-based Marketing Facts. No Intuition. No Bullshit.</a></h4>
+            <p>Not nonprofit-specific, but great marketing nuggets in here.</p>
+            <p class="domain">mdaniels.com</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="item">
+            <h4><a target="_blank" href="http://www.npengage.com/nonprofit-research/50-fascinating-nonprofit-statistics/">Fascinating Nonprofit Statistics.</a></h4>
+            <p>That $25 billion figure in slide 22 is very interesting...</p>
+            <p class="domain">npengage.com</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="item">
+            <h4><a target="_blank" href="http://blog.hubspot.com/marketing/takeaways-science-email-2014">New Insights From the 2014 Science of Email Report</a></h4>
+            <p>Data from a survey of 300+ million opened marketing emails.</p>
+            <p class="domain">hubspot.com</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="item">
+            <h4><a target="_blank" href="http://gettingattention.org/articles/4274/social-media/nonprofit-facebook-roi.html">Is Facebook a Waste of Time for Nonprofits?</a></h4>
+            <p>Unless you're doing it just right, you might as well not do it.</p>
+            <p class="domain">gettingattention.org</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="item">
+            <h4><a target="_blank" href="http://mod-lab.com/blog/hooked-a-model-for-driving-engagement">Hooked: A Model for Driving Engagement</a></h4>
+            <p>It's increasingly critical to understand what factors drive users to engage with your org.</p>
+            <p class="domain">mod-lab.com</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="item">
+            <h4><a target="_blank" href="http://www.pinterest.com/howardlake/fundraising-infographics/">Fundraising Infographics</a></h4>
+            <p>Personally, I think there's a bit of a cargo cult around infographics. But have a look and make up your own mind.</p>
+            <p class="domain">pinterest.com</p>
+          </td>
+        </tr>
+
+
+
+
+
+        <tr>
+          <td class="section">
+            <h3>Tools</h3>
+          </td>
+        </tr>
+        <tr>
+          <td class="item">
+            <h4><a target="_blank" href="http://www.christiankonline.com/5-hashtag-tracking-tools/">Hashtag tracking tools to help track and measure social media performance</a></h4>
+            <p>You should't need a tool to know that #assnchat is a terrible hashtag. But people still use it.</p>
+            <p class="domain">christiankonline.com</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="item">
+            <h4><a target="_blank" href="http://www.socialmediaexaminer.com/twitter-cards-types/">Types of Twitter Cards Businesses Are Using</a></h4>
+            <p>Your site should have Twiter Card tags (and Open Graph tags, to boot!)</p>
+            <p class="domain">socialmediaexaminer.com</p>
+          </td>
+        </tr>
+
+
+        <tr>
+          <td class="section">
+            <h3>Watching &amp; Listening</h3>
+          </td>
+        </tr>
+        <tr>
+          <td class="item">
+            <h4><a target="_blank" href="http://philanthropy.com/article/SimpleEffective-Facebook/147009">Quick Tips for Getting More Out of Your Facebook Followers</a></h4>
+            <p>Digital-marketing experts share simple and effective tips that can help nonprofits expand their reach on social networks and convert Facebook followers into email subscribers and donors.</p>
+            <p class="domain">philanthropy.com</p>
+          </td>
+        </tr>
+
+
+
+
+        <tr>
+          <td class="section">
+            <h3>Jobs</h3>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="item">
+            <h4><a target="_blank" href="http://www.idealist.org/view/job/kkJjj5f6snxd">Product Manager</a></h4>
+            <p class="domain">groundswell.org</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="item">
+            <h4><a target="_blank" href="http://www.idealist.org/view/job/t58gdJkWWNxd">Program Manager, MIT Global Startup Labs </a></h4>
+            <p class="domain">mit.edu</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="item">
+            <h4><a target="_blank" href="http://www.idealist.org/view/job/pKx4f73dN3H4">Marketing Manager</a></h4>
+            <p class="domain">dreamfoundation.org</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="item">
+            <h4><a target="_blank" href="http://www.idealist.org/view/job/6HJNH9DhwnH4">Technology Coordinator</a></h4>
+            <p class="domain">hiponline.org</p>
+          </td>
+        </tr>
+
+                <tr>
+          <td class="item">
+            <h4><a target="_blank" href="http://www.idealist.org/view/job/jswN9JKPPXjd">Manager, Marketing and Communications</a></h4>
+            <p class="domain">tns.org</p>
+          </td>
+        </tr>
+
+                <tr>
+          <td class="item">
+            <h4><a target="_blank" href="http://www.idealist.org/view/job/BW58sNtbKc2D">Multimedia Specialist</a></h4>
+            <p class="domain">zerotothree.org</p>
+          </td>
+        </tr>
+
+
+
+
+
+      </table>
+      </div>
+      <!-- /content -->
+
+    </td>
+    <td></td>
+  </tr>
+</table>
+<!-- /body -->
+
+<!-- footer -->
+<!-- <table class="footer-wrap">
+  <tr>
+    <td></td>
+    <td class="container">
+
+
+      <div class="content">
+        <table>
+          <tr>
+            <td align="center">
+              <p>Over us? <a target="_blank" href="#"><unsubscribe>Unsubscribe</unsubscribe></a>.
+              </p>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+    </td>
+    <td></td>
+  </tr>
+</table> -->
+<!-- /footer -->
+
+</body>
+</html>
