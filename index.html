@@ -1,3 +1,4 @@
+<!-- test -->
 <!doctype html>
 <html class="no-js">
   <head>
@@ -15,11 +16,18 @@
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
 
-    <link rel="stylesheet" href="styles/vendor.css">
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
 
+    <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
 
-    <script src="scripts/vendor/modernizr.js"></script>
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="../bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
 
            <!-- Place this data between the <head> tags of your website -->
            <!-- Twitter Card data -->
@@ -103,12 +111,8 @@
               </div>
 
 
-    <!--           <div class="col-md-8 col-md-offset-2">
-                  <hr>
-              </div> -->
 
-
-<!--               <div class="row">
+              <div class="row">
 
                   <div class="col-md-8 col-md-offset-2">
                       <hr>
@@ -124,12 +128,14 @@
 
 
                   <div class="col-md-10 col-md-offset-1 text-center">
-                  <h3 class="issue"><!-- <span class="glyphicon glyphicon-calendar"></span> -->May 22, 2014 - Issue #103</h3>
+                   <h3 class="issue">May 22, 2014 - Issue #103</h3>
+                  </div>
+
               </div>
 
-              </div> -->
 
-              <!-- <div class="row section">
+
+              <div class="row section">
                   <div class="col-md-10 col-md-offset-1">
                       <h3 class="section-header reading">reading</h3>
                   </div>
@@ -271,14 +277,14 @@
                         <div id="mce-responses" class="clear">
                           <div class="response" id="mce-error-response" style="display:none"></div>
                           <div class="response" id="mce-success-response" style="display:none"></div>
-                        </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                        </div>    
                           <div style="position: absolute; left: -5000px;"><input type="text" name="b_3dfc1e15b385cfc2af0e11f50_191d660ab9" tabindex="-1" value=""></div>
 
                       </form>
 
                   </div>
 
-              </div> -->
+              </div>
 
 
 
@@ -295,10 +301,29 @@
 
           </div>
 
-    <script src="scripts/vendor.js"></script>
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
 
-        <script src="scripts/plugins.js"></script>
+        <!-- build:js scripts/plugins.js -->
+        <script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/affix.js"></script>
+        <script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/alert.js"></script>
+        <script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/dropdown.js"></script>
+        <script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tooltip.js"></script>
+        <script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/modal.js"></script>
+        <script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/transition.js"></script>
+        <script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/button.js"></script>
+        <script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/popover.js"></script>
+        <script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/carousel.js"></script>
+        <script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/scrollspy.js"></script>
+        <script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/collapse.js"></script>
+        <script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tab.js"></script>
+        <!-- endbuild -->
 
+        <!-- build:js scripts/main.js -->
         <script src="scripts/main.js"></script>
+        <!-- endbuild -->
 </body>
 </html>
